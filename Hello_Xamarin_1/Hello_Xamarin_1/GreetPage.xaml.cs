@@ -14,29 +14,45 @@ namespace Hello_Xamarin_1
             InitializeComponent();
             slider.Value = 0.5;
 
-            // Dealing with platform differencies 1.
-            if (Device.OS == TargetPlatform.iOS)
+            /* [Property element syntax]  */
+            // Tickness in various platfroms from CODE
+            // Other solution is in GreetPage.xaml
+            var x = new OnPlatform<Thickness>
+            {
+                Android = new Thickness(0),
+                iOS = new Thickness(0, 20, 0, 0)
+            };
+            Padding = x;
+
+            /* [Dealing with platform differencies] */
+            // 1.
+            /*if (Device.OS == TargetPlatform.iOS)
                 Padding = new Thickness(0, 20, 0, 0);
             else if (Device.OS == TargetPlatform.Android)
                 Padding = new Thickness(10, 20, 0, 0);
             else if (Device.OS == TargetPlatform.WinPhone)
                 Padding = new Thickness(30, 20, 0, 0);
+            */
 
-            // Dealing with platform differencies 2.
-            Padding = Device.OnPlatform(
+
+            // 2.
+            /*Padding = Device.OnPlatform(
                         iOS: new Thickness(0, 20, 0, 0),
                         Android: new Thickness(10, 20, 0, 0),
                         WinPhone: new Thickness(30, 20, 0, 0)
                       );
+            */
 
-            // Dealing with platform differencies 3.
-            Device.OnPlatform(
+
+            // 3.
+            /*Device.OnPlatform(
                 iOS: () => {
                     Padding = new Thickness(0, 20, 0, 0);
                 },
                 Android: () => {
                     // ...
                 });
+            */
         }
 
         
