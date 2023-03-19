@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Hello_Xamarin_1.GridPageExercise"
+             BackgroundColor="#354242">
+    <Grid Padding="40" RowSpacing="10" ColumnSpacing="10" >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="85"/>
+            <ColumnDefinition Width="80"/>
+            <ColumnDefinition Width="80"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="65"/>
+            <RowDefinition Height="65"/>
+            <RowDefinition Height="65"/>
+            <RowDefinition Height="65"/>
+            <RowDefinition Height="65"/>
+        </Grid.RowDefinitions>
+        
+        <Label Grid.Row="0" Grid.ColumnSpan="5" 
+               Text="1234" 
+               FontSize="50" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"
+               TextColor="White"/>
+
+        <Button Grid.Row="1" Grid.Column="1" CornerRadius="30"  
+                Text="1" BackgroundColor="#ff" TextColor="#28282c" />
+        
+        <Button Grid.Row="1" Grid.Column="2" CornerRadius="30"  
+                Text="2" BackgroundColor="#ff" TextColor="#28282c"/>
+        
+        <Button Grid.Row="1" Grid.Column="3" CornerRadius="30"
+               Text="3" BackgroundColor="#ff" TextColor="#28282c" />
+
+        <Button Grid.Row="2" Grid.Column="1" CornerRadius="30"
+               Text="4" BackgroundColor="#ff" TextColor="#28282c" />
+
+        <Button Grid.Row="2" Grid.Column="2" CornerRadius="30"
+               Text="5" BackgroundColor="#ff" TextColor="#28282c"/>
+
+        <Button Grid.Row="2" Grid.Column="3" CornerRadius="30"
+               Text="6" BackgroundColor="#ff" TextColor="#28282c"/>
+
+        <Button Grid.Row="3" Grid.Column="1" CornerRadius="30"
+               Text="7" BackgroundColor="#ff" TextColor="#28282c"/>
+
+        <Button Grid.Row="3" Grid.Column="2" CornerRadius="30"
+               Text="8" BackgroundColor="#ff" TextColor="#28282c"/>
+
+        <Button Grid.Row="3" Grid.Column="3" CornerRadius="30"
+               Text="9" BackgroundColor="#ff" TextColor="#28282c"/>
+
+        <Button Grid.Row="4" Grid.Column="2" CornerRadius="30"
+               Text="0" BackgroundColor="#ff" />
+
+        <Button Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="3" CornerRadius="30"
+               Text="Dial" BackgroundColor="#96ca2d"/>
+    </Grid>
+</ContentPage>
