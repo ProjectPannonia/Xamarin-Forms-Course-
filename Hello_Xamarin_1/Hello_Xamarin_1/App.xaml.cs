@@ -10,7 +10,7 @@ namespace Hello_Xamarin_1
         {
             InitializeComponent();
 
-            MainPage = new GridPageExercise2();
+            MainPage = new AbsolutePage();
         }
 
         protected override void OnStart()
