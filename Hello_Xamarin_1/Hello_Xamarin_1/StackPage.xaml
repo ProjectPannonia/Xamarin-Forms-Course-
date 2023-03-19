@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage Padding="0, 20, 0, 0"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Hello_Xamarin_1.StackPage">
+    <ContentPage.Content>
+        <StackLayout 
+                     Orientation="Horizontal"
+                     Padding="40"
+                     Spacing="20"
+                     VerticalOptions="Center"
+                     HorizontalOptions="Center">
+            <StackLayout>
+                <Image Source="http://via.placeholder.com/100x100" />
+                <Label Text="Label 1" />
+            </StackLayout>
+            
+            <Label Text="Label 1" />
+            <Label Text="Label 1" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
