@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Hello_Xamarin_1.ImagePage"
+             xmlns:local="clr-namespace:Hello_Xamarin_1"
              BackgroundColor="Black">
 
     <!-- 
@@ -18,5 +19,7 @@
     </AbsoluteLayout>
     -->
 
-    <Image x:Name="image" Aspect="AspectFill"/>
+    <Image x:Name="image" 
+           Aspect="AspectFill"
+           Source="{local:EmbeddedImage Hello_Xamarin_1.Images.Background.jpg}"/>
 </ContentPage>

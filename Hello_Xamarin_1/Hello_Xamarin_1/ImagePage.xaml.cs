@@ -30,7 +30,7 @@ namespace Hello_Xamarin_1
             image.Source = imageSource;
             */
 
-            image.Source = ImageSource.FromResource("Hello_Xamarin_1.Images.Background.jpg");
+            //image.Source = ImageSource.FromResource("Hello_Xamarin_1.Images.Background.jpg");
             
         }
     }
