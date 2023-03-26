@@ -24,10 +24,11 @@ namespace Hello_Xamarin_1
             };
 
             imageSource.CachingEnabled = false;
-            imageSource.CacheValidity = TimeSpan.FromHours(1);
+            //imageSource.CacheValidity = TimeSpan.FromHours(1);
 
             image.Source = imageSource;
 
+            
         }
     }
 }
