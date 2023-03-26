@@ -10,7 +10,7 @@ namespace Hello_Xamarin_1
         {
             InitializeComponent();
 
-            MainPage = new RelativePage();
+            MainPage = new ImagePage();
         }
 
         protected override void OnStart()
