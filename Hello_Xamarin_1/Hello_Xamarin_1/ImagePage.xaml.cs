@@ -18,6 +18,7 @@ namespace Hello_Xamarin_1
 
             //var imageSource = (UriImageSource) ImageSource.FromUri(new Uri("http://..."));
 
+            /*
             var imageSource = new UriImageSource 
             { 
                 Uri = new Uri("https://www.gettyimages.pt/gi-resources/images/Homepage/Hero/PT/PT_hero_42_153645159.jpg") 
@@ -27,7 +28,9 @@ namespace Hello_Xamarin_1
             //imageSource.CacheValidity = TimeSpan.FromHours(1);
 
             image.Source = imageSource;
+            */
 
+            image.Source = ImageSource.FromResource("Hello_Xamarin_1.Images.Background.jpg");
             
         }
     }
