@@ -19,7 +19,18 @@
     </AbsoluteLayout>
     -->
 
+    <!--
     <Image x:Name="image" 
            Aspect="AspectFill"
            Source="{local:EmbeddedImage Hello_Xamarin_1.Images.Background.jpg}"/>
+    -->
+
+    <Button x:Name="btn">
+        <Button.ImageSource>
+            <OnPlatform x:TypeArguments="FileImageSource"
+                        iOS="clock.png"
+                        Android="clock.png"
+                        WinPhone="Images/clock.png"/>
+        </Button.ImageSource>
+    </Button>
 </ContentPage>

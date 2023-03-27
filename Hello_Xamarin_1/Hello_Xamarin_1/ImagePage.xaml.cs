@@ -31,7 +31,12 @@ namespace Hello_Xamarin_1
             */
 
             //image.Source = ImageSource.FromResource("Hello_Xamarin_1.Images.Background.jpg");
-            
+            btn.ImageSource = ImageSource.FromFile(
+                Device.OnPlatform(
+                    iOS:"clock.png",
+                    Android:"clock.png",
+                    WinPhone:"Images/clock.png"
+                    ));
         }
     }
 }
