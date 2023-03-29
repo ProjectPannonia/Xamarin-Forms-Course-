@@ -15,6 +15,15 @@ namespace Hello_Xamarin_1
         public Demo()
         {
             InitializeComponent();
+
+            var names = new List<string>
+            {
+                "Mosh",
+                "John",
+                "Bob"
+            };
+
+            listView.ItemsSource= names;
         }
     }
 }

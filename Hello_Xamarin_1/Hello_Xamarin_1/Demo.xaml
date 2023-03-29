@@ -4,6 +4,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"  
              x:Class="Hello_Xamarin_1.Demo">
 
+    <!--
     <ic:CircleImage 
         WidthRequest="100"
         HeightRequest="100"
@@ -12,5 +13,7 @@
         HorizontalOptions="Center"
         VerticalOptions="Center"
         />
+    -->
 
+    <ListView x:Name="listView" SeparatorVisibility="None"/>
 </ContentPage>
