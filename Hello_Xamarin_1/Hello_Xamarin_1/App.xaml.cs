@@ -10,7 +10,7 @@ namespace Hello_Xamarin_1
         {
             InitializeComponent();
 
-            MainPage = new Demo();
+            MainPage = new PhotoGalleryExecise();
         }
 
         protected override void OnStart()
