@@ -26,17 +26,15 @@ namespace Hello_Xamarin_1
             };
             */
 
-            listView.ItemsSource= new List<Contact> {
-                new Contact 
-                { 
-                    Name="Mosh", 
-                    ImageUrl="http://lorempixel.com/100/100/people/1" 
-                },
-                new Contact
+            listView.ItemsSource= new List<ContactGroup> {
+
+                new ContactGroup("M", "M")
                 {
-                    Name="John",
-                    ImageUrl="http://lorempixel.com/100/100/people/2",
-                    Status="Hey, let's talk!"
+                    new Contact { Name="Mosh", ImageUrl="http://lorempixel.com/100/100/people/1" }
+                },
+                new ContactGroup("J", "J")
+                {
+                    new Contact{ Name="John", ImageUrl="http://lorempixel.com/100/100/people/2", Status="Hey, let's talk!" }
                 }
             };
         }
